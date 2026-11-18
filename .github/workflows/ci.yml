@@ -44,7 +44,7 @@ jobs:
 
   deploy:
     needs: test
-    runs-on: [self-hosted, portfolio-deploy]
+    runs-on: [self-hosted, aiagent-deploy]
     steps:
       - name: Check Docker on Windows
         if: runner.os == 'Windows'
